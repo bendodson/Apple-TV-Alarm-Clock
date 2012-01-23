@@ -5,6 +5,8 @@ So, how does one go about creating an AirPlay Alarm Clock? First of all, you wil
 Installation
 ============
 
+This script is compatible with iTunes 10.5.*
+
 Firstly, you’ll need to make a small tweak to your OS X setup: if you go into System Preferences and then Universal Access, you’ll need to enable access for assistive devices – this is so AppleScript can make keypresses on your behalf.
 
 Now, edit the first two lines in AppleScript Editor so that the variables match the name of your device and your playlist. Once that is done, you can save the script as an application. To get the alarm to play automagically in the mornings, you can open up iCal and create a new event (it can be recurring if you want a daily alarm). In the “alarm” section, there is a little known entry called “run script” which you can use to run an AppleScript at a specified time relative to the alarm. If you choose the script you saved, then it will automatically run at the allotted time. Simple!
