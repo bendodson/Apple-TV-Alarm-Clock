@@ -15,9 +15,9 @@ tell application "System Events"
 	tell window "iTunes" of application process "iTunes"
 		click button 10 of window "iTunes" of application process "iTunes" of application "System Events"
 		key code 125 using {command down}
-		delay 1
+		delay 0.2
 		keystroke return
-		delay 1
+		delay 0.2
 		tell window "Multiple Speakers" of application process "iTunes" of application "System Events"
 			activate
 			click button 2
