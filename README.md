@@ -5,7 +5,7 @@ So, how does one go about creating an AirPlay Alarm Clock? First of all, you wil
 Installation
 ============
 
-This script is compatible with iTunes 10.5.* and 10.6.*
+This script is compatible with iTunes 10.5.* , 10.6.*, and 10.7.*
 
 Firstly, you’ll need to make a small tweak to your OS X setup: if you go into System Preferences and then Universal Access, you’ll need to enable access for assistive devices – this is so AppleScript can make keypresses on your behalf.
 
