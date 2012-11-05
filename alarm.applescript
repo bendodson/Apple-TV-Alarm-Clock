@@ -11,7 +11,6 @@ tell application "System Events"
 	end tell
 	delay 0.2
 	
-	
 	tell window "iTunes" of application process "iTunes"
 		click button 10 of window "iTunes" of application process "iTunes" of application "System Events"
 		key code 125 using {command down}
@@ -20,7 +19,7 @@ tell application "System Events"
 		delay 0.2
 		tell window "Multiple Speakers" of application process "iTunes" of application "System Events"
 			activate
-			click button 2
+			
 			tell table 1 of scroll area 1
 				activate
 				
@@ -30,8 +29,8 @@ tell application "System Events"
 						tell group 1 of row i
 							activate
 							if description of checkbox 1 as string = AppleTVName and value of checkbox 1 = 0 then
-								set value of checkbox 1 to 1
-								delay 0.5
+								click checkbox 1
+								delay 0.2
 							end if
 						end tell
 					end if
@@ -43,7 +42,7 @@ tell application "System Events"
 						tell group 1 of row i
 							activate
 							if description of checkbox 1 as string is not equal to AppleTVName and value of checkbox 1 = 1 then
-								set value of checkbox 1 to 0
+								click checkbox 1
 								delay 0.2
 							end if
 						end tell
@@ -61,9 +60,8 @@ tell application "System Events"
 	
 end tell
 
-
 tell application "iTunes"
-	#set shuffle of playlist PlaylistName to 1
+	set shuffle of playlist PlaylistName to 1
 	play playlist PlaylistName
-	set volume 80
+	set the sound volume to 80
 end tell
