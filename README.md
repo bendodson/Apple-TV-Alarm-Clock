@@ -2,6 +2,8 @@ A few years ago, I wrote a [convoluted AppleScript](https://bendodson.com/weblog
 
 Fast forward to today and I found myself needing this script again for a new project. After a bit of hacking around, I’ve managed to get the script fully updated for iTunes 11 and iTunes 12.
 
+You can [read more about it on my website](https://bendodson.com/weblog/2016/05/12/airplay-alarm-clock-with-itunes-12/).
+
 Installation
 ============
 
