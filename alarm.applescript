@@ -13,8 +13,8 @@ end tell
 
 tell application "System Events"
 	tell process "iTunes" to if exists then
-		click menu item "Songs" of menu "Shuffle" of menu item "Shuffle" of menu "Controls" of menu bar 1
-		click menu item "On" of menu "Shuffle" of menu item "Shuffle" of menu "Controls" of menu bar 1
+		click menu item "Songs" of menu 0 of menu item "Shuffle" of menu "Controls" of menu bar 1
+		click menu item "On" of menu 0 of menu item "Shuffle" of menu "Controls" of menu bar 1
 	end if
 end tell
 
