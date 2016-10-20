@@ -13,6 +13,8 @@ If you haven’t disabled the GateKeeper restrictions on your Mac, you will need
 
 With the alarm exported, we now need to open up Automator and create a new Calendar Alarm. Find the Launch Application action and set that up to point to your newly exported alarm app. Finally, save this and you’ll find a new entry has appeared in your calendar; it will launch immediately thus starting off the iTunes alarm process. Simply copy and paste this alarm entry (or make it recurring) in order to set it to whatever times you want.
 
+Don't forget add alarm app to Accesibility option in Privacy tab from Secutity & Privacy option.
+
 License
 =======
 
