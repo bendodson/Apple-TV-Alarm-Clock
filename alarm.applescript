@@ -1,24 +1,18 @@
 set AirplayDeviceName to "Kitchen"
 set PlaylistName to "5 Star Music"
 set AirplayVolume to 100
+set EnableShuffle to true
 
-activate application "iTunes"
-
-tell application "System Events"
-	tell application "iTunes"
-		set visible of front browser window to true
-		set the view of the front browser window to playlist PlaylistName
-	end tell
+-- Ready up Music App
+tell application "Music"
+	activate
+	set visible of front browser window to true
+	set the view of the front browser window to playlist PlaylistName
+	set shuffle enabled to EnableShuffle
 end tell
 
-tell application "System Events"
-	tell process "iTunes" to if exists then
-		click menu item "Songs" of menu 0 of menu item "Shuffle" of menu "Controls" of menu bar 1
-		click menu item "On" of menu 0 of menu item "Shuffle" of menu "Controls" of menu bar 1
-	end if
-end tell
-
-tell application "iTunes"
+-- Set up Airplay
+tell application "Music"
 	set AirplayNames to (get name of AirPlay devices)
 	set AirplayDevices to (get AirPlay devices)
 	set AirplayToPlay to {}
@@ -28,7 +22,8 @@ tell application "iTunes"
 	set current AirPlay devices to AirplayToPlay
 end tell
 
-tell application "iTunes"
+-- Play the music
+tell application "Music"
 	play playlist PlaylistName
 	set the sound volume to AirplayVolume
 end tell
